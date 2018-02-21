@@ -1,0 +1,110 @@
+<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio -->
+<!-- https://www.w3schools.com/css/css_border.asp -->
+<!-- https://www.w3schools.com/tags/att_li_type.asp -->
+<!-- https://www.w3schools.com/jsref/event_onclick.asp -->
+<!--  -->
+
+<html>
+	<head>
+			<link href="Quiz.css" rel="stylesheet" type="text/css"/>
+			<?php include 'Quiz.php';?>
+
+			<font face = "Tw Cen MT" size = "5">
+					<h1> Let's take a quiz! </h1>
+					<h2> Think you are smart enough? </h2>
+			</font>
+			
+	</head>
+
+    <body>
+	    <font face = "Tw Cen MT" size = "5">
+
+			<!-- Questions -->
+			<form action="Quiz.php" method="post">
+				<div>
+					<h3> Question 1: Which is the largest country containing only one time zone?</h3>
+					<li type="none" name="q1">
+						<ol>
+							<li type="a"> Russia <input type="radio" name="a1"></li>
+							<li type="a"> China <input type="radio" name="b1"></li>
+							<li type="a"> Nepal <input type="radio" name="c1"></li>
+							<li type="a"> Turkey <input type="radio" name="d1"></li>
+						</ol>
+					</li>
+				</div>
+				<br>
+
+				<div>
+					<h3> Question 2: What is always coming, but never arrives? </h3>
+					<li type="none" name="q2">
+						<ol>
+							<li type="a"> Your Uber <input type="radio" name="a2"></li>
+							<li type="a"> Pizza Delivery <input type="radio" name="b2"></li>
+							<li type="a"> Tomorrow <input type="radio" name="c2"></li>
+							<li type="a"> Midterm Exam <input type="radio" name="d2"></li>
+						</ol>
+					</li>
+				</div>
+				<br>
+
+				<div>
+					<h3> Question 3: What percentage of people live to the North of the equator? </h3>
+					<li type="none" name="q3">
+						<ol>
+							<li type="a"> 90% <input type="radio" name="a3"></li>
+							<li type="a"> 80% <input type="radio" name="b3"></li>
+							<li type="a"> 70% <input type="radio" name="c3"></li>
+							<li type="a"> 60% <input type="radio" name="d3"></li>
+						</ol>
+					</li>
+				</div>
+				<br>
+
+				<div>
+					<h3> Question 4: If an electric train is moving north at 100mph and there is wind blowing to the west at 10mph, which way does the smoke blow? </h3>
+					<li type="none" name="q4">
+						<ol>
+							<li type="a"> Southwest <input type="radio" name="a4"></li>
+							<li type="a"> Northeast <input type="radio" name="b4"></li>
+							<li type="a"> An electric train has no smoke <input type="radio" name="c4"></li>
+							<li type="a"> Mostly to the south <input type="radio" name="d4"></li>
+						</ol>
+					</li>
+				</div>
+				<br>
+
+				<div>
+					<h3> Question 5: What breaks and never falls and what falls and never breaks? </h3>
+					<li type="none" name="q5">
+						<ol>
+							<li type="a"> Websites and  marquees <input type="radio" name="a5"></li>
+							<li type="a"> Workers and concrete <input type="radio" name="b5"></li>
+							<li type="a"> Memories and fruitcakes <input type="radio" name="c5"></li>
+							<li type="a"> Day breaks and night falls <input type="radio" name="d5"></li>
+						</ol>
+					</li>
+				</div>
+				<br>
+
+				<div>
+					<h3> Question 6: Do you know da way?</h3>
+						<li type="none" name="q6">
+							<ol>
+								<li type="a"> Yes brudda <input type="radio" name="a6"></li>
+								<li type="a"> Nah bruh <input type="radio" name="b6"></li>
+								<li type="a"> What way? <input type="radio" name="c6"></li>
+								<li type="a"> I am da queen <input type="radio" name="d6"></li>
+							</ol>
+						</li>
+				</div>
+				<br>
+
+				<!-- Submit -->
+
+				<input type="submit" onclick="alert('Quiz will now be graded')">
+
+			</form>
+
+	    </font>
+    </body>
+</html>

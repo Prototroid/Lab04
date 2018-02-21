@@ -1,0 +1,14 @@
+div
+{
+    border-style: outset;
+    border-width: 2;
+}
+
+body
+{
+    background-color: white;
+    background-image: url(Quiz_Back.png);
+    background-size: 100%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
