@@ -7,7 +7,7 @@
 <html>
 	<head>
 			<link href="Quiz.css" rel="stylesheet" type="text/css"/>
-			<?php include 'Quiz.php';?>
+			<!-- <?php include 'Quiz.php';?> -->
 
 			<font face = "Tw Cen MT" size = "5">
 					<h1> Let's take a quiz! </h1>
@@ -20,10 +20,10 @@
 	    <font face = "Tw Cen MT" size = "5">
 
 			<!-- Questions -->
-			<form action="Quiz.php" method="post">
+			<form action="" method="post">
 				<div>
-					<h3> Question 1: Which is the largest country containing only one time zone?</h3>
-					<li type="none" name="q1">
+					<h3 name="q1"> Question 1: Which is the largest country containing only one time zone? </h3>
+					<li type="none">
 						<ol>
 							<li type="a"> Russia <input type="radio" name="a1"></li>
 							<li type="a"> China <input type="radio" name="b1"></li>
@@ -35,8 +35,8 @@
 				<br>
 
 				<div>
-					<h3> Question 2: What is always coming, but never arrives? </h3>
-					<li type="none" name="q2">
+					<h3 name="q2"> Question 2: What is always coming, but never arrives? </h3>
+					<li type="none">
 						<ol>
 							<li type="a"> Your Uber <input type="radio" name="a2"></li>
 							<li type="a"> Pizza Delivery <input type="radio" name="b2"></li>
@@ -48,8 +48,8 @@
 				<br>
 
 				<div>
-					<h3> Question 3: What percentage of people live to the North of the equator? </h3>
-					<li type="none" name="q3">
+					<h3 name="q3"> Question 3: What percentage of people live to the North of the equator? </h3>
+					<li type="none">
 						<ol>
 							<li type="a"> 90% <input type="radio" name="a3"></li>
 							<li type="a"> 80% <input type="radio" name="b3"></li>
@@ -61,8 +61,8 @@
 				<br>
 
 				<div>
-					<h3> Question 4: If an electric train is moving north at 100mph and there is wind blowing to the west at 10mph, which way does the smoke blow? </h3>
-					<li type="none" name="q4">
+					<h3 name="q4"> Question 4: If an electric train is moving north at 100mph and there is wind blowing to the west at 10mph, which way does the smoke blow? </h3>
+					<li type="none">
 						<ol>
 							<li type="a"> Southwest <input type="radio" name="a4"></li>
 							<li type="a"> Northeast <input type="radio" name="b4"></li>
@@ -74,8 +74,8 @@
 				<br>
 
 				<div>
-					<h3> Question 5: What breaks and never falls and what falls and never breaks? </h3>
-					<li type="none" name="q5">
+					<h3  name="q5"> Question 5: What breaks and never falls and what falls and never breaks? </h3>
+					<li type="none">
 						<ol>
 							<li type="a"> Websites and  marquees <input type="radio" name="a5"></li>
 							<li type="a"> Workers and concrete <input type="radio" name="b5"></li>
@@ -87,8 +87,8 @@
 				<br>
 
 				<div>
-					<h3> Question 6: Do you know da way?</h3>
-						<li type="none" name="q6">
+					<h3  name="q6"> Question 6: Do you know da way? </h3>
+						<li type="none">
 							<ol>
 								<li type="a"> Yes brudda <input type="radio" name="a6"></li>
 								<li type="a"> Nah bruh <input type="radio" name="b6"></li>
@@ -101,9 +101,11 @@
 
 				<!-- Submit -->
 
-				<input type="submit" onclick="alert('Quiz will now be graded')">
+				<input type="submit" onclick="alert('Quiz will now be graded')" value="Submit Quiz"  name="submit">
 
 			</form>
+
+			<?php include 'Quiz.php';?>
 
 	    </font>
     </body>
