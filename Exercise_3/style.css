@@ -1,0 +1,61 @@
+/* https://www.formstack.com/blog/2010/customize-form-buttons-with-css/ */
+/* https://html.com/attributes/button-type/ */
+
+head
+{
+    font-family: 'Mukta Vaani', sans-serif;
+    color: white;
+}
+
+div.a
+{
+    border-style: ridge;
+    border-color: rgb(106, 173, 240);
+    border-width: 4;
+    /* -webkit-margin-end: 800px; */
+}
+
+table
+{
+    border-style: ridge;
+    border-color: rgb(106, 173, 240);
+    border-width: 4;
+}
+
+body
+{
+    font-family: 'Play', sans-serif;
+    color: white;
+    background-color: rgb(54, 54, 54);
+    /* background-image: url(https://static.pexels.com/photos/210186/pexels-photo-210186.jpeg); */
+    background-image: url(webpage_back.png);
+    background-size: 100%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.special
+{
+    background-color: rgb(106, 173, 240);
+    border: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 9px 20px;
+    text-transform: uppercase;
+    /* -webkit-transition: 0.2s ease all;
+    -o-transition: 0.2s ease all; */
+    transition: 0.2s ease all;
+}
+
+/* .fsSubmitButton
+{
+	background-image: 	url(signup.png);
+	background-repeat:	no-repeat;
+	background-color:	transparent;
+	height:			66px;
+	width:			182px;
+	border:			none;
+	text-indent:		-999em;
+} */

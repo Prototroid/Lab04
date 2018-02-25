@@ -1,0 +1,94 @@
+<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio -->
+<!-- https://www.w3schools.com/css/css_border.asp -->
+<!-- https://www.w3schools.com/tags/att_li_type.asp -->
+<!-- https://www.w3schools.com/jsref/event_onclick.asp -->
+<!-- https://stackoverflow.com/questions/4554758/how-to-read-if-a-checkbox-is-checked-in-php -->
+<!-- https://www.w3schools.com/bootstrap/bootstrap_forms_inputs.asp -->
+<!--  -->
+
+<html>
+	<head>
+            <!-- Source files and references -->
+            <link href="style.css" rel="stylesheet" type="text/css"/>
+            <link href="https://fonts.googleapis.com/css?family=Mukta+Vaani|Play" rel="stylesheet">
+            <script src="formChecker.js"></script>
+
+            <!-- Header -->
+			<h1 align="center"> PC Parts Web Store </h1>
+            <h2 align="center"> Would you like to buy something? </h2>
+            <div class="a"></div>
+            <br>
+	</head>
+
+    <body>
+
+        <!-- Username and password -->
+            <!-- <form id="login" onsubmit="return userLogin();" action="javascript:noRedirect();" method="post">
+                <h3> Please login below </h3>
+                <h4> Username: <input type="text" class="form-control" id="user" placeholder="name@domain.com" name="username" required></h4>
+                <h4> Password: <input type="text" class="form-control" id="pass" placeholder="password" name="password" required></h4>
+                <input class="special" type="submit" value="Login"  name="login">
+            </form> -->
+            <br>
+
+		<!-- Store Items -->
+			<form id="products" onsubmit="return userLogin() && submitProduct();" action="customerBackend.php" method="post">
+                
+                    <!-- <form id="login" onsubmit="return userLogin();" action="javascript:noRedirect();" method="post"> -->
+                            <h3> Please login below </h3>
+                            <h4> Username: <input type="text" class="form-control" id="user" placeholder="name@domain.com" name="username" required></h4>
+                            <h4> Password: <input type="text" class="form-control" id="pass" placeholder="password" name="password" required></h4>
+                            <!-- <input class="special" type="submit" value="Login"  name="login">
+                        </form> -->
+                
+                <div class="a"><ol>
+                    <h3> Super Awesome CPU Cooler w/ Red LED Fans <input type="hidden" name="p1" value="0" /><input type="checkbox" name="p1" id="p1" value="1" onclick="displayQuantity(1)"/></h3>
+                    <img src= "product1.jpg" id="pic1" width="400" height="300"></img>
+                    <h4 id="v1" name="v1" value="50.00"> $50.00 </h4>
+                    <h4  name="t1" id="t1" style="display:none"> Quantity: <input type="text" id="q1" placeholder="0" name="q1"></h4>
+				</ol></div>
+                <br>
+                
+                <div class="a"><ol>
+                    <h3> Zotac GeForce GTX 1070 Ti AMP Extreme <input type="hidden" name="p2" value="0" /><input type="checkbox" name="p2" id="p2" onclick="displayQuantity(2)"/></h3>
+                    <img src= "product2.jpg" id="pic2" width="415.2" height="342"></img>
+                    <h4 id="v2" name="v2" value="700.00"> $700.00 </h4>
+                    <h4 name="t2" id="t2" style="display:none"> Quantity: <input type="text" id="q2" placeholder="0" name="q2"></h4>
+                </ol></div>
+                <br>
+
+                <div class="a"><ol>
+                    <h3> Intel Core i9-7980XE Skylake X 18-Core 2.6 GHz <input type="hidden" name="p3" value="0" /><input type="checkbox" name="p3" id="p3" onclick="displayQuantity(3)"/></h3>
+                    <img src= "product3.jpg" id="pic3" width="415.2" height="342"></img>
+                    <h4 id="v3" name="v3" value="1800.00"> $1,800.00 </h4>
+                    <h4  name="t3" id="t3" style="display:none"> Quantity: <input type="text" id="q3" placeholder="0" name="q3"></h4>
+                </ol></div>
+                <br>
+
+                <!-- Shipping -->
+                
+                    <h4> Shipping: </h4>
+                    <div class= "radio">
+                           <label> <input type="radio" class="form-control" id="s1" name="s" value="s1"> Free 7 day </label>
+                    </div>
+                    <div class= "radio">
+                            <label> <input type="radio" class="form-control"id="s2" name="s" value="s2"> $5.00 three day </label>
+                    </div>
+                    <div class= "radio">
+                            <label> <input type="radio" class="form-control" id="s3" name="s" value="s3"> $50.00 over night </label>
+                    </div>
+                    <br>
+
+			    <!-- Submit -->
+                    <input class="special" type="submit" onclick="alert('The product(s) and shipping you chose will now be submitted')" value="Submit"  name="submit">
+                
+                <!-- Reset -->
+				    <input class="special" type="reset" onclick="alert('Form will now reset')" value="Reset"  name="reset">
+
+			</form>
+
+			<?php include 'customerBackend.php';?>
+
+	    
+    </body>
+</html>
